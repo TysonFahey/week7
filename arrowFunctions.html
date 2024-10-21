@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Functions</title>
+  </head>
+  <body>
+    <h1>Arrow functions week 7</h1>
+
+    <script>
+      let animals = ["Bird", "Whale", "Zebra"];
+      // Function callbacks vs. arrow functions
+      // these two pieces of code are identical
+
+      // using a callback function
+      animals.forEach(function (animal) {
+        console.log(animal);
+      });
+
+      // using a callback function, written in arrow notation
+      // this is more concise
+      animals.forEach((animal) => {
+        console.log(animal);
+      });
+
+      // if there is only one parameter to the callback function, you can leave the extra parenthesis
+      animals.forEach((animal) => {
+        console.log(animal);
+      });
+
+      // if there is only one statement in the callback function, you ccan leave out the curly brackets
+      animals.forEach((animal) => console.log(animal));
+
+      // if there is only one parameter to the callback function and one statement in the callback function you can leave out the () and {}
+      animals.forEach((animal) => console.log(animal));
+
+      // Or you can be mroe concise and write on one line.. Only works for a single line in the callback function
+      animals.forEach((animal) => console.log(animal));
+    </script>
+  </body>
+</html>

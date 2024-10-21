@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval week 7</title>
+</head>
+<body>
+    <h1>What time is it?</h1>
+    <p id="time"></p>
+    <script>
+
+        let timeElement = document.querySelector("#time") // id time from the p element 
+
+        // setInterval(function(){
+        //     let date = Date() // Date gets your date and time information from computer
+        //     timeElement.innerHTML = date
+        // }, 1000) // 1000ths of a second is the interval between function calls
+
+        // more concise version
+        setInterval(()=> {
+            let date = Date()
+            timeElement.innerHTML = date
+        },1000)
+    </script>
+</body>
+</html>
